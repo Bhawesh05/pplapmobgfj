@@ -5,80 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remote Screen Control - Connect</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>📱 Remote Screen Control</h1>
+            <h1><i class="fas fa-mobile-alt"></i> Remote Screen Control</h1>
             <p class="subtitle">Control your laptop screen from mobile - Simple & Free</p>
         </header>
         
         <main>
             <div class="card">
-                <h2>Get Started</h2>
+                <h2><i class="fas fa-play-circle"></i> Get Started</h2>
                 <p>Create a new session to connect your laptop and mobile</p>
                 
                 <button id="createSession" class="btn-primary">
-                    Create New Session
+                    <i class="fas fa-plus-circle"></i> Create New Session
                 </button>
                 
                 <div id="sessionLinks" class="hidden">
                     <div class="link-box">
-                        <h3>📺 Laptop Link:</h3>
+                        <h3><i class="fas fa-laptop"></i> Laptop Link:</h3>
                         <p>Open this on your laptop to share screen</p>
-                        <div class="url-display" id="laptopUrl"></div>
-                        <button class="btn-copy" data-target="laptopUrl">Copy Link</button>
+                        <div class="url-container">
+                            <div class="url-display" id="laptopUrl"></div>
+                            <button class="btn-copy" data-target="laptopUrl">
+                                <i class="fas fa-copy"></i> Copy Link
+                            </button>
+                        </div>
                     </div>
                     
                     <div class="link-box">
-                        <h3>📱 Mobile Link:</h3>
+                        <h3><i class="fas fa-mobile-alt"></i> Mobile Link:</h3>
                         <p>Open this on your phone to control</p>
-                        <div class="url-display" id="mobileUrl"></div>
-                        <button class="btn-copy" data-target="mobileUrl">Copy Link</button>
+                        <div class="url-container">
+                            <div class="url-display" id="mobileUrl"></div>
+                            <button class="btn-copy" data-target="mobileUrl">
+                                <i class="fas fa-copy"></i> Copy Link
+                            </button>
+                        </div>
                     </div>
                     
-                    <div class="qr-section hidden" id="qrSection">
-                        <h3>Scan QR Code for Mobile:</h3>
+                    <div class="qr-section">
+                        <h3><i class="fas fa-qrcode"></i> Scan QR Code for Mobile:</h3>
                         <div id="qrcode"></div>
                     </div>
                     
                     <div id="connectionStatus" class="status">
-                        Waiting for connections...
+                        <i class="fas fa-sync fa-spin"></i> Waiting for connections...
                     </div>
                     
-                    <p class="instructions">
-                        <strong>Instructions:</strong><br>
-                        1. Open laptop link on your laptop and click "Start Sharing"<br>
-                        2. Open mobile link on your phone (scan QR code)<br>
-                        3. Control laptop screen from your phone!
-                    </p>
+                    <div class="instructions">
+                        <h4><i class="fas fa-info-circle"></i> Instructions:</h4>
+                        <ol>
+                            <li>Open laptop link on your laptop and click "Start Sharing"</li>
+                            <li>Open mobile link on your phone (scan QR code)</li>
+                            <li>Control laptop screen from your phone!</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
             
             <div class="features">
-                <h2>Features</h2>
+                <h2><i class="fas fa-star"></i> Features</h2>
                 <div class="feature-grid">
                     <div class="feature">
-                        <div class="feature-icon">🔗</div>
+                        <div class="feature-icon"><i class="fas fa-link"></i></div>
                         <h3>Easy Connection</h3>
                         <p>No installations, works in browser</p>
                     </div>
                     <div class="feature">
-                        <div class="feature-icon">👆</div>
+                        <div class="feature-icon"><i class="fas fa-hand-pointer"></i></div>
                         <h3>Touch Controls</h3>
                         <p>Tap, drag, and scroll from mobile</p>
                     </div>
                     <div class="feature">
-                        <div class="feature-icon">⚡</div>
+                        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
                         <h3>Real-time</h3>
                         <p>Low latency screen sharing</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                        <h3>AI Assisted</h3>
+                        <p>Auto-optimization for best performance</p>
                     </div>
                 </div>
             </div>
         </main>
         
         <footer>
-            <p>Basic Version - Free & Open Source | No installation required</p>
+            <p><i class="fas fa-code"></i> Basic Version - Free & Open Source | No installation required</p>
         </footer>
     </div>
     
